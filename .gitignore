@@ -5,11 +5,17 @@
 /tmp
 /out-tsc
 /bazel-out
+/.angular/
+
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+.env.local
 
 # IDEs and editors
 .idea/
@@ -40,3 +46,12 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+
+# Coverage from tests
+/coverage/
+
+# Environment files
+/src/environments/environment*.ts
