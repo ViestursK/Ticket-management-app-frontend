@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a routerLink="/">MyApp</a>
+    </div>
+
+    <!-- Burger Icon -->
+    <div class="burger" (click)="toggleMenu()">
+      <span [class.active]="isMenuOpen"></span>
+      <span [class.active]="isMenuOpen"></span>
+      <span [class.active]="isMenuOpen"></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" [class.open]="isMenuOpen">
+      <a routerLink="/home" (click)="closeMenu()">Home</a>
+      <a routerLink="/about" (click)="closeMenu()">About</a>
+      <a routerLink="/contact" (click)="closeMenu()">Contact</a>
+      <button class="signin-btn" (click)="closeMenu()">Sign In</button>
+    </div>
+  </div>
+</nav>
