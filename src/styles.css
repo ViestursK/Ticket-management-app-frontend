@@ -1,10 +1,3 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background-color: aqua;
-}
-
 /* Colors */
 :root {
   --primary: #4f46e5;
@@ -18,8 +11,16 @@ html {
 
 /* Fonts */
 :root {
-  --font-base: "Inter", sans-serif;
+  --font-base: Arial, sans-serif;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  font-family: var(--font-base);
 }

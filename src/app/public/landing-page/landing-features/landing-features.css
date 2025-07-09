@@ -1,0 +1,38 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  background-color: var(--background);
+  padding-bottom: 3rem;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.feature-box {
+  background: var(--background);
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.feature-box p {
+  font-size: 1rem;
+  color: #333;
+}
