@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Footer } from './footer/footer';
+import { Header } from './header/header';
+import { Main } from './main/main';
+import { SideNav } from './side-nav/side-nav';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Footer, Header, Main, SideNav],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
 })
 export class App {
   protected title = 'ticken-management-frontend';
