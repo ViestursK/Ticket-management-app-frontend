@@ -1,17 +1,28 @@
 /* Colors */
 :root {
-  --primary: #4f46e5;
-  --primary-light: #6366f1;
-  --secondary: #6b7280;
-  --accent: #22d3ee;
-  --danger: #ef4444;
-  --background: #ffffff;
-  --text: #111827;
+  /* Primary Theme */
+  --primary: #2563eb; /* Blue-600 */
+  --primary-light: #3b82f6; /* Blue-500 */
+
+  /* Secondary / Muted Grays */
+  --secondary: #6b7280; /* Gray-500 */
+  --secondary-light: #9ca3af; /* Gray-400 */
+
+  /* Accent / Highlight */
+  --accent: #10b981; /* Emerald-500 */
+
+  /* Alerts */
+  --danger: #ef4444; /* Red-500 */
+
+  /* Background & Text */
+  --background: #f9fafb; /* Light Gray Background */
+  --card: #ffffff; /* White card panels */
+  --text: #1f2937; /* Gray-800 */
 }
 
 /* Fonts */
 :root {
-  --font-base: Arial, sans-serif;
+  --font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
@@ -21,6 +32,41 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: aqua;
+  background-color: var(--background);
+  color: var(--text);
   font-family: var(--font-base);
+}
+
+/* Buttons */
+.primary-btn {
+  padding: var(--spacing-sm) var(--spacing-sm);
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+  min-width: 7rem;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-light);
+}
+
+.secondary-btn {
+  padding: var(--spacing-sm) var(--spacing-sm);
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 600;
+  min-width: 7rem;
+  text-decoration: none;
+}
+
+.secondary-btn:hover {
+  background-color: var(--secondary-light);
 }

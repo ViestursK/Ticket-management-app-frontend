@@ -17,7 +17,8 @@
       <a routerLink="/home" (click)="closeMenu()">Home</a>
       <a routerLink="/about" (click)="closeMenu()">About</a>
       <a routerLink="/contact" (click)="closeMenu()">Contact</a>
-      <button class="signin-btn" (click)="closeMenu()">Sign In</button>
+      <button class="primary-btn" (click)="closeMenu() "[routerLink]="['auth/register']">Get started</button>
+      <button class="secondary-btn" (click)="closeMenu() "[routerLink]="['auth/login']">Sign In</button>
     </div>
   </div>
 </nav>
